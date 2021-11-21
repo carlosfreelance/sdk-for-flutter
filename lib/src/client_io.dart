@@ -143,7 +143,7 @@ class ClientIO extends ClientBase with ClientMixin {
       device = '(Linux; U; ${lininfo.id} ${lininfo.version})';
     }
     if (Platform.isWindows) {
-      final wininfo = await deviceInfoPlugin.windowsInfo;
+      final wininfo = await deviceInfoPlugin.WindowsDeviceInfo;
       device =
           '(Windows NT; ${wininfo.computerName})'; //can't seem to get much info here
     }
